@@ -1,0 +1,16 @@
+name: Mirror GitHub Wiki
+on:
+  push:
+    paths: ["wiki/**"]
+    branches: [trunk]
+jobs:
+  deploy-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Andrew-Chen-Wang/github-wiki-action@v3
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Must have push access
+          GH_MAIL: jcbhmr@outlook.com
+          GH_NAME: jcbhmr
