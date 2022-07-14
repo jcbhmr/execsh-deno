@@ -33,10 +33,10 @@ The properties on the returned `ShellResponse` object are similar to the `Respon
 
 **ℹ** More docs are available on [the Wiki](https://github.com/jcbhmr/execsh-deno/wiki)
 
-There is no installation! Just import the HTTP URL in your Deno script, plop a `#! /usr/bin/env -S deno --allow-all` at the top, and you're good to go!
+There is no installation! Just import the HTTP URL in your Deno script, plop a `#! /usr/bin/env -S deno run --allow-all` at the top, and you're good to go!
 
 ```ts
-#! /usr/bin/env -S deno --allow-all
+#! /usr/bin/env -S deno run --allow-all
 
 import $ from "https://esm.sh/@jcbhmr/execsh"
 
