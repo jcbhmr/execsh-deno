@@ -1,6 +1,5 @@
 {
-    "imports": {
-        "assert": "https://esm.sh/assert@2.0.0",
-        "shell-escape": "https://deno.land/x/shell_escape@1.0.0/single-argument.ts"
-    }
+	"imports": {
+		"shell-escape": "https://deno.land/x/shell_escape@1.0.0/single-argument.ts"
+	}
 }
