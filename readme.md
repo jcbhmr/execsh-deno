@@ -20,7 +20,8 @@ Use an already familiar `Response`-esque API to interact with the shell!
 To start using, import the module and call the default export as a tagged template function. The inserted `${variable}`s are auto-coerced to strings and escaped with the `$'fancy "text in# here!@* '` method.
 
 ```ts
-execsh`rollup -c ${Deno.args[4] ?? "./rollup-config.js"}`
+// These will be properly escaped
+execsh`rollup -c ${Deno.args[3]}`
 execsh`cp ${source} ${destination}`
 ```
 
