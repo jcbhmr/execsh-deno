@@ -26,6 +26,8 @@ execsh`cp ${source} ${destination}`
 
 The properties on the returned `ShellResponse` object are similar to the `Response` API. All the same `.body`, `.text()`, `.json()` methods are still there. The one tweak is that the `.ok`, `.status`, and `.statusText` properties all return `Promise`s now. This is because the status code of a shell command is not determined until it has finished.
 
+**ℹ** You can read more about each particular difference on [the Wiki](https://github.com/jcbhmr/execsh-deno/wiki)
+
 ### Installation
 
 **ℹ** More docs are available on [the Wiki](https://github.com/jcbhmr/execsh-deno/wiki)
