@@ -1,0 +1,5 @@
+{
+	"imports": {
+		"shell-escape": "https://deno.land/x/shell_escape@1.0.0/single-argument.ts"
+	}
+}
